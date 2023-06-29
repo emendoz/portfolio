@@ -1,6 +1,7 @@
 import {Fragment} from 'react';
 import TopBanner from './TopBanner';
 import Box from '@mui/material/Box';
+import TerminalHome from './TerminalHome';
 
 export default function HomePage(props) {
 
@@ -16,6 +17,7 @@ return (
               }}
             >
                 <TopBanner />
+                <TerminalHome />
 
             </Box>
         </Fragment>
