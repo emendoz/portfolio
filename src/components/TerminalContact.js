@@ -2,7 +2,7 @@ import {Fragment} from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 
-export default function TerminalHome(props) {
+export default function TerminalContact(props) {
 
 
 return (
@@ -55,7 +55,7 @@ return (
                 />
                 <Typography variant="h6"
                 sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 10 }}>
-                    Home -- -bash -- 80x24
+                    Contact -- -bash -- 80x24
                 </Typography>
             </Box>
         </Box>

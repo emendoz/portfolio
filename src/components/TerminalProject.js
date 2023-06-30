@@ -2,7 +2,9 @@ import {Fragment} from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 
-export default function TerminalHome(props) {
+projNumber = [Project1, Project2, Project3, Project4];
+
+export default function TerminalProject(props) {
 
 
 return (
@@ -55,7 +57,7 @@ return (
                 />
                 <Typography variant="h6"
                 sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 10 }}>
-                    Home -- -bash -- 80x24
+                    {projName} -- -bash -- 80x24
                 </Typography>
             </Box>
         </Box>
