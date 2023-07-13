@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-const name = "EGM<";
+const nameIcon = "EGM<";
 const pages = ['Home', 'Portfolio', 'About', 'Contact'];
 
 export default function TopBanner(props) {
@@ -23,14 +23,13 @@ return (
 
           <Typography variant="h5" component="div" sx={{ flexGrow: 1, mr: 2}}
           style={{ fontFamily: "Menlo", color: "rgb(135,255,116)" }}>
-            {name}
+            {nameIcon}
           </Typography>
 
           <Box>
             {pages.map((page) => (
               <Button
                 key={page}
-                //onClick={ }
                 sx={{ fontFamily: "Menlo", color: "rgb(135,255,116)", mr: 2 }}
               >
                 {page}
