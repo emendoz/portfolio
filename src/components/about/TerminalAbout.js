@@ -2,14 +2,14 @@ import {Fragment} from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 
-export default function TerminalContact(props) {
+export default function TerminalAbout(props) {
 
 
 return (
     <Fragment sx={{ flexGrow: 1 }}>
         <Box
               sx= {{
-                height: 773,
+                height: "fixed",
                 width: 629,
                 display: 'flex',
                 alignItems: 'flex-start',
@@ -55,7 +55,7 @@ return (
                 />
                 <Typography variant="h6"
                 sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 10 }}>
-                    Contact -- -bash -- 80x24
+                    About -- -bash -- 80x24
                 </Typography>
             </Box>
         </Box>

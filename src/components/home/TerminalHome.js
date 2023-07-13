@@ -1,29 +1,33 @@
 import {Fragment} from 'react';
+import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 
-projNumber = [Project1, Project2, Project3, Project4];
+export default function TerminalHome(props) {
 
-export default function TerminalProject(props) {
-
+    const NameTag = ({value}) => {
+        return  <Typography variant="h5" sx= {{ fontFamily: "Menlo", color: "rgb(135,255,116)", ml: 4, mt: 2}}>
+           erikagmendoza $ {value}
+        </Typography>
+    };
 
 return (
     <Fragment sx={{ flexGrow: 1 }}>
         <Box
               sx= {{
-                height: 773,
-                width: 629,
+                height: 378,
+                width: 1385,
                 display: 'flex',
-                alignItems: 'flex-start',
                 m: 2,
                 backgroundColor: 'rgb(26,26,26)',
                 borderRadius: 10
               }}
         >
+        <Grid>
             <Box display="flex"
                 sx= {{
                     height: 46,
-                    width: 629,
+                    width: 1385,
                     backgroundColor: 'rgb(64,64,64)',
                     borderRadius: 3
                 }}
@@ -56,10 +60,15 @@ return (
                     }}
                 />
                 <Typography variant="h6"
-                sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 10 }}>
-                    {projName} -- -bash -- 80x24
+                sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 45 }}>
+                    Home -- -bash -- 80x24
                 </Typography>
             </Box>
+            <NameTag value={"hello world :D"} />
+            <NameTag value={"hello world :D"} />
+            <NameTag value={"hello world :D"} />
+            <NameTag value={"hello world :D"} />
+        </Grid>
         </Box>
     </Fragment>
     );

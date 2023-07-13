@@ -2,14 +2,17 @@ import {Fragment} from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 
-export default function TerminalHome(props) {
+const projName = ["Project1", "Project2", "Project3", "Project4"];
+
+export default function TerminalProject(props) {
+
 
 
 return (
     <Fragment sx={{ flexGrow: 1 }}>
         <Box
               sx= {{
-                height: 773,
+                height: "fixed",
                 width: 629,
                 display: 'flex',
                 alignItems: 'flex-start',
@@ -55,7 +58,7 @@ return (
                 />
                 <Typography variant="h6"
                 sx= {{ fontFamily: "Menlo", color: "white", m: 1, ml: 10 }}>
-                    Home -- -bash -- 80x24
+                    {projName[0]} -- -bash -- 80x24
                 </Typography>
             </Box>
         </Box>
